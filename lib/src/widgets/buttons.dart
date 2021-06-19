@@ -19,9 +19,10 @@ class WhiteButton extends _BaseButton {
           child: child,
           iconData: iconData,
           textStyle: new TextStyle(
-              fontSize: 14.0,
-              color: Colors.black87.withOpacity(0.8),
-              fontWeight: bold ? FontWeight.bold : FontWeight.normal),
+            fontSize: 14.0,
+            color: Colors.black87.withOpacity(0.8),
+            fontWeight: bold ? FontWeight.bold : FontWeight.normal,
+          ),
           color: Colors.white,
           borderSide: flat
               ? BorderSide.none
@@ -49,7 +50,10 @@ class AccentButton extends StatelessWidget {
       color: Theme.of(context).accentColor,
       borderSide: BorderSide.none,
       textStyle: const TextStyle(
-          fontSize: 14.0, color: Colors.white, fontWeight: FontWeight.bold),
+        fontSize: 14.0,
+        color: Colors.white,
+        fontWeight: FontWeight.bold,
+      ),
       text: text,
     );
   }
