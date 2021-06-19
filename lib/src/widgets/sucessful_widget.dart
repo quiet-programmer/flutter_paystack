@@ -85,7 +85,7 @@ class _SuccessfulWidgetState extends State<SuccessfulWidget>
             const Text(
               'Payment Successful',
               style: const TextStyle(
-                color: Colors.black87,
+                // color: Colors.black87,
                 fontWeight: FontWeight.w500,
                 fontSize: 16.0,
               ),
@@ -97,7 +97,7 @@ class _SuccessfulWidgetState extends State<SuccessfulWidget>
                 ? new Container()
                 : new Text('You paid ${Utils.formatAmount(widget.amount)}',
                     style: const TextStyle(
-                      color: Colors.black54,
+                      // color: Colors.black54,
                       fontWeight: FontWeight.normal,
                       fontSize: 14.0,
                     )),

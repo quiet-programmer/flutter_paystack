@@ -78,7 +78,10 @@ class CustomAlertDialog extends StatelessWidget {
                         child: new IconButton(
                           icon: new Icon(Icons.close),
                           onPressed: onCancelPress,
-                          color: Colors.black54,
+                          color:
+                              Theme.of(context).brightness == Brightness.light
+                                  ? Colors.black54
+                                  : Colors.white,
                           padding: const EdgeInsets.all(15.0),
                           iconSize: 30.0,
                         ),
@@ -97,7 +100,9 @@ class CustomAlertDialog extends StatelessWidget {
       var body = new Material(
         type: MaterialType.card,
         borderRadius: new BorderRadius.circular(10.0),
-        color: Colors.white,
+        color: Theme.of(context).brightness == Brightness.light
+            ? Colors.white
+            : Colors.grey[850],
         child: new Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
