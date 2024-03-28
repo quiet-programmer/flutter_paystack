@@ -6,6 +6,8 @@ class Crypto {
   static Future<String> encrypt(String data) async {
     var completer = Completer<String>();
 
+
+
     try {
       String? result = await Utils.methodChannel
           .invokeMethod('getEncryptedData', {"stringData": data});
